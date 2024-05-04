@@ -3,9 +3,10 @@ import db from './db.js';
 import multer from 'multer';
 import csv from 'csvtojson';
 import User from './models/user.js';
+import cors from 'cors'
 
 const app = express();
-
+app.use(cors())
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
