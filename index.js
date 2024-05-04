@@ -63,6 +63,6 @@ app.get('/api/data', async (req, res) => {
 
 
 
-app.listen(3000, () => {
+app.listen(process.env.PORT, () => {
  console.log('Express server initialized');
 });
